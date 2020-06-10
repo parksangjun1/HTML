@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>position:absolute</title>
+	<style>
+		div{
+			/* 모든 태그의 기본 position값은 static */
+			width: 150px;
+			height: 150px;
+			line-height: 150px;
+			text-align: center;
+			font-size: 30px;
+			background-color: yellow;
+			border: 1px solid black;
+		}
+		.absolute{
+			/* position: absolute는 본인과 가장 가까운 조상 중에서 포지션이 
+				relative인 조상을 기준으로 한다. 없으면 <html>태그를 기준으로한다. */
+			position: absolute;
+			top : 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div>1번박스</div>
+	<div>2번박스</div>
+	<div class="absolute">3번박스</div>
+</body>
+</html>

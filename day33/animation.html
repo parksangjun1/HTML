@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>애니메이션</title>
+</head>
+<style>
+	/*
+	 1. 애니메이션을 등록
+	 2. 등록한 애니메이션을 호출
+	 3.
+	 */
+	 /*
+	 1. 애니메이션 등록
+	 @keyframes 애니메이션명{
+		  시간비율(%){
+		 	 스타일;
+			}
+			시간비율{
+		 	 스타일;
+			} 
+	 }
+	  */
+	@keyframes zoom{
+		/* 0%는 from으로 대체 가능
+			100%는 to로 대체 가능 */
+		from{
+			font-size: 20px;
+		}
+		50%{
+			font-size: 40px;
+		}
+		to{
+			font-size: 20px;
+		}
+
+		
+	}
+	
+		/*
+		2. 애니메이션 호출
+		 
+		 */
+		 .zoom1,
+		 .zoom2,
+		 .zoom3,
+		 .zoom4,
+		 .zoom5{
+			 /* zoomin 애니메이션을 선택 */
+			 animation-name: zoom;
+			 /* 애니메이션 실행 시간이 5s => 
+			 		애니메이션이 0%에서 100%가 될때까지
+					 진행시간이다. */
+			 animation-duration: 4s;
+			 /*  */
+			 animation-iteration-count: infinite;
+			 
+		 }
+		 .zoom2{
+			 animation-timing-function: ease-in-out;
+		 }
+		 .zoom3{
+			 animation-timing-function: linear;
+		 }
+		 .zoom4{
+			 animation-timing-function: ease-in;
+		 }
+		 .zoom5{
+			 animation-timing-function: step-start;
+		 }
+		 div{
+			 height: 60px;
+		 }
+</style>
+<body>
+	<div>
+	<span class="zoom1">안녕~!</span>
+</div><div>
+	<span class="zoom2">안녕~!</span>
+</div><div>
+	<span class="zoom3">안녕~!</span>
+</div><div>
+	<span class="zoom4">안녕~!</span>
+</div><div>
+	<span class="zoom5">안녕~!</span>
+</div>
+</body>
+</html>
