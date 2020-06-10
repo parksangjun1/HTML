@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: rgb(245, 246, 247);
+			}
+			.container{
+				width: 400px;
+				margin: 0 auto;			
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			.logo{
+				text-align: center;
+				margin-top: 20px;
+			}
+			.logo>a{
+				color: rgb(0, 200, 80);
+				font-size: 70px;
+				font-weight: 900;
+			}		
+			.box-id{
+				height: 50px;
+				border: rgb(218, 218, 218) 1px solid;
+				border-color: white;
+				margin-top:50px;
+				padding: 10px;
+				box-sizing: border-box;				
+			}
+			.box-pw{
+				height: 50px;
+				border: rgb(218, 218, 218) 1px solid;
+				border-color: white;
+				margin-top:10px;
+				padding: 10px;
+				box-sizing: border-box;	
+			}
+			.box-id>input,
+			.box-pw>input{
+				height: 28px;
+				width: 100%;
+				border: none;
+			}
+			.btn-submit{
+				width: 100%;
+				display: block;
+				background-color: rgb(0, 200, 80);
+				color: white;
+				font-weight: bold;
+				height: 50px;
+				line-height: 50px;
+				font-size: 24px;
+				margin-top: 20px;
+			}	
+    </style>
+</head>
+<body>
+		<div class="container">
+		<div class="logo">
+			<a href="//naver.com">NAVER</a>
+		</div>
+		<div class="container-id">		
+			<div class="box-id">
+				<input type="text" placeholder="아이디"> 
+			</div>
+		</div>
+		<div class="container-pw">
+			<div class="box-pw">
+				<input type="password" placeholder="비밀번호">
+			</div>
+		</div>
+		<button class="btn-submit">로그인</button>
+		
+	</div>
+</body>
+</html>
